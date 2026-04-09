@@ -91,7 +91,6 @@ A-B =
 $$
 
 #### Multiplicación de escalar por vector
-
 $$
 C \cdot A = 
 \begin{bmatrix}
@@ -99,6 +98,7 @@ C \cdot A =
     C(c+di)
 \end{bmatrix}
 $$
+
 #### Inverso de un vector
 $$
 -A = 
