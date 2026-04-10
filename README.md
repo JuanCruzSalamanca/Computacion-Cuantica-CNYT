@@ -1,4 +1,4 @@
-****# 🚀 COMPUTACIÓN CUÁNTICA (CNYT)
+# 🚀 COMPUTACIÓN CUÁNTICA (CNYT)
 
 > [!IMPORTANT]
 > Para que el programa principal funcione se deben usar las librerías `numpy` y `cmath`.
@@ -140,6 +140,24 @@ $$
 \|A\| = \sqrt{\langle A|A \rangle}
 $$
 
+#### Producto tensor de vectores
+$$
+A \otimes B = 
+\begin{bmatrix} 
+    a \cdot B \\ 
+    c \cdot B 
+\end{bmatrix} = 
+
+\begin{bmatrix} 
+    a(e + fi) \\ 
+    a(g + hi) \\ 
+    c(e + fi) \\ 
+    c(g + hi) 
+\end{bmatrix}
+$$
+
+El producto tensor combinan dos vectores en un espacio de Hilbert mayor. En computación cuántica, se utiliza para representar estados de múltiples qubits.
+
 ### Matrices
 Dadas las matrices $A$ y $B$ y el número complejo $C$, las operaciones que se pueden realizar con matrices son:
 
@@ -233,3 +251,14 @@ $$
 $$
 \langle A|B\rangle = \text{tr}(A^{\dagger} \cdot B)
 $$
+
+#### Producto tensor de matrices
+$$
+A \otimes B = 
+\begin{bmatrix} 
+    (a + bi)B & (c + di)B \\ 
+    (e + fi)B & (g + hi)B 
+\end{bmatrix}
+$$
+
+Donde cada elemento de $A$ multiplica toda la matriz $B$. El producto tensor de matrices se utiliza en computación cuántica para combinar múltiples compuertas cuánticas.

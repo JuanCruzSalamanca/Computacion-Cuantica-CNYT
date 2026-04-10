@@ -91,6 +91,24 @@ def prod_int_mtz(mtz_1, mtz_2):
     prod_int_result = np.trace(matriz_mult(mtz_1, mtz_2))
     return prod_int_result
 
+# ===== PRODUCTO TENSOR =====
+
+def prod_tensor_vec(vec_1, vec_2):
+    '''Esta funcion realiza el producto tensor entre dos vectores.
+    En computacion cuantica, el producto tensor combina dos estados
+    cuanticos en un espacio de Hilbert mayor.'''
+    
+    prod_tensor_result = np.kron(vec_1, vec_2)
+    return prod_tensor_result
+
+def prod_tensor_mtz(mtz_1, mtz_2):
+    '''Esta funcion realiza el producto tensor entre dos matrices.
+    En computacion cuantica, el producto tensor se utiliza para
+    combinar multiples compuertas cuanticas.'''
+    
+    prod_tensor_result = np.kron(mtz_1, mtz_2)
+    return prod_tensor_result
+
 
 if __name__ == "__main__":
     
@@ -198,3 +216,12 @@ if __name__ == "__main__":
     prod_int = prod_int_mtz(m1, m2)
     print("PROD INTERNO MATRICES")
     print(f"{prod_int} \n")
+    
+    # ===== PRODUCTO TENSOR =====
+    prod_tensor_v = prod_tensor_vec(v3, v3)
+    print("PRODUCTO TENSOR VECTORES")
+    print(f"{prod_tensor_v} \n")
+    
+    prod_tensor_m = prod_tensor_mtz(m1, m2)
+    print("PRODUCTO TENSOR MATRICES")
+    print(f"{prod_tensor_m} \n")
