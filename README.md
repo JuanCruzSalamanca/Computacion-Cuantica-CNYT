@@ -1,4 +1,4 @@
-# 🚀 COMPUTACIÓN CUÁNTICA (CNYT)
+****# 🚀 COMPUTACIÓN CUÁNTICA (CNYT)
 
 > [!IMPORTANT]
 > Para que el programa principal funcione se deben usar las librerías `numpy` y `cmath`.
@@ -54,7 +54,20 @@ $$
 ## Operaciones de vectores y matrices
 ### Vectores
 Dados los vectores $A$ y $B$ y el número complejo $C$, las operaciones que se pueden realizar con vectores son:
-$$A = \begin{bmatrix} a + bi \\ c + di \end{bmatrix} \quad y \quad B = \begin{bmatrix} e + fi \\ g + hi \end{bmatrix}$$
+
+$$
+A = 
+\begin{bmatrix} 
+    a + bi \\ 
+    c + di 
+\end{bmatrix} 
+\quad y \quad 
+B = 
+\begin{bmatrix} 
+    e + fi \\ 
+    g + hi 
+\end{bmatrix}
+$$
 
 #### Suma de vectores
 $$A+B = \begin{bmatrix} (a+e) + (b+f)i \\ (c+g) + (d+h)i \end{bmatrix}$$
