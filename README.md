@@ -70,24 +70,65 @@ B =
 $$
 
 #### Suma de vectores
-$$A+B = \begin{bmatrix} (a+e) + (b+f)i \\ (c+g) + (d+h)i \end{bmatrix}$$
+$$
+A+B = 
+\begin{bmatrix} 
+    (a+e) + (b+f)i \\ 
+    (c+g) + (d+h)i 
+\end{bmatrix}
+$$
 
 #### Resta de vectores
-$$A-B = \begin{bmatrix} (a-e) + (b-f)i \\ (c-g) + (d-h)i \end{bmatrix}$$
+$$
+A-B = 
+\begin{bmatrix} 
+    (a-e) + (b-f)i \\ 
+    (c-g) + (d-h)i 
+\end{bmatrix}
+$$
 
 #### Multiplicación de escalar por vector
-$$C \cdot A = \begin{bmatrix} C(a+bi) \\ C(c+di) \end{bmatrix}$$
+$$
+C \cdot A = 
+\begin{bmatrix} 
+    C(a+bi) \\ 
+    C(c+di) 
+\end{bmatrix}
+$$
+
 #### Inverso de un vector
-$$-A = \begin{bmatrix} -(a + bi) \\ -(c + di) \end{bmatrix}$$
+$$
+-A = 
+\begin{bmatrix} 
+    -(a + bi) \\ 
+    -(c + di) 
+\end{bmatrix}
+$$
 
 #### Transpuesta de un vector
-$$A^T = \begin{bmatrix} a + bi & c + di \end{bmatrix}$$
+$$
+A^T = 
+\begin{bmatrix} 
+    a + bi & c + di 
+\end{bmatrix}
+$$
 
 #### Conjugado de un vector
-$$\overline{A} = \begin{bmatrix} a-bi \\ c-di \end{bmatrix}$$
+$$
+\overline{A} = 
+\begin{bmatrix} 
+    a-bi \\ 
+    c-di 
+\end{bmatrix}
+$$
 
 #### Adjunto de un vector
-$$A^{\dagger} = \begin{bmatrix} a - bi & c - di \end{bmatrix}$$
+$$
+A^{\dagger} = 
+\begin{bmatrix} 
+    a - bi & c - di 
+\end{bmatrix}
+$$
 
 #### Producto interno entre vectores
 $$
@@ -101,31 +142,92 @@ $$
 
 ### Matrices
 Dadas las matrices $A$ y $B$ y el número complejo $C$, las operaciones que se pueden realizar con matrices son:
-$$A = \begin{bmatrix} a + bi & c + di \\ e + fi & g + hi \end{bmatrix} \quad y \quad B = \begin{bmatrix} j + ki & l + mi \\ n + oi & p + qi \end{bmatrix}$$
+
+$$
+A = 
+\begin{bmatrix} 
+    a + bi & c + di \\ 
+    e + fi & g + hi 
+\end{bmatrix} 
+\quad y \quad 
+B = 
+\begin{bmatrix} 
+    j + ki & l + mi \\ 
+    n + oi & p + qi 
+\end{bmatrix}
+$$
 
 #### Suma de matrices
-$$A+B = \begin{bmatrix} (a+j) + (b+k)i & (c+l) + (d+m)i \\ (e+n) + (f+o)i & (g+p) + (h+q)i \end{bmatrix}$$
+$$
+A+B = 
+\begin{bmatrix} 
+    (a+j) + (b+k)i & (c+l) + (d+m)i \\ 
+    (e+n) + (f+o)i & (g+p) + (h+q)i 
+\end{bmatrix}
+$$
 
 #### Resta de matrices
-$$A-B = \begin{bmatrix} (a-j) + (b-k)i & (c-l) + (d-m)i \\ (e-n) + (f-o)i & (g-p) + (h-q)i \end{bmatrix}$$
+$$
+A-B = 
+\begin{bmatrix} 
+    (a-j) + (b-k)i & (c-l) + (d-m)i \\ 
+    (e-n) + (f-o)i & (g-p) + (h-q)i 
+    \end{bmatrix}
+$$
 
 #### Multiplicación de escalar por matriz
-$$C \cdot A = \begin{bmatrix} C(a+bi) & C(c+di) \\ C(e+fi) & C(g+hi) \end{bmatrix}$$
+$$
+C \cdot A = 
+\begin{bmatrix} 
+    C(a+bi) & C(c+di) \\ 
+    C(e+fi) & C(g+hi) 
+\end{bmatrix}
+$$
 
 #### Inverso de una matriz
-$$-A = \begin{bmatrix} -(a + bi) & -(c + di) \\ -(e + fi) & -(g + hi) \end{bmatrix}$$
+$$
+-A = 
+\begin{bmatrix} 
+    -(a + bi) & -(c + di) \\ 
+    -(e + fi) & -(g + hi) 
+\end{bmatrix}
+$$
 
 #### Transpuesta de una matriz
-$$A^T = \begin{bmatrix} a + bi & e + fi \\ c + di & g + hi \end{bmatrix}$$
+$$
+A^T = 
+\begin{bmatrix} 
+    a + bi & e + fi \\ 
+    c + di & g + hi 
+\end{bmatrix}
+$$
 
 #### Conjugado de una matriz
-$$\overline{A} = \begin{bmatrix} a-bi & c-di \\ e-fi & g-hi \end{bmatrix}$$
+$$
+\overline{A} = 
+\begin{bmatrix} 
+    a-bi & c-di \\ 
+    e-fi & g-hi 
+\end{bmatrix}
+$$
 
 #### Adjunta de una matriz
-$$A^{\dagger} = \begin{bmatrix} a - bi & e - fi \\ c - di & g - hi \end{bmatrix}$$
+$$
+A^{\dagger} = 
+\begin{bmatrix} 
+    a - bi & e - fi \\ 
+    c - di & g - hi 
+    \end{bmatrix}
+$$
 
 #### Multiplicación de matrices
-$$A \cdot B = \begin{bmatrix} (a + bi)(j + ki) + (c + di)(n + oi) & (a + bi)(l + mi) + (c + di)(p + qi) \\ (e + fi)(j + ki) + (g + hi)(n + oi) & (e + fi)(l + mi) + (g + hi)(p + qi) \end{bmatrix}$$
+$$
+A \cdot B = 
+\begin{bmatrix} 
+    (a + bi)(j + ki) + (c + di)(n + oi) & (a + bi)(l + mi) + (c + di)(p + qi) \\ 
+    (e + fi)(j + ki) + (g + hi)(n + oi) & (e + fi)(l + mi) + (g + hi)(p + qi) 
+\end{bmatrix}
+$$
 
 #### Producto interno de matrices
 $$
