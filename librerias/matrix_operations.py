@@ -225,3 +225,70 @@ if __name__ == "__main__":
     prod_tensor_m = prod_tensor_mtz(m1, m2)
     print("PRODUCTO TENSOR MATRICES")
     print(f"{prod_tensor_m} \n")
+
+
+    # ================== Q14 ==================
+    estado_phi = np.array([[1/np.sqrt(2)],
+                           [1j/np.sqrt(2)]])
+    
+    observable = np.array([[0, -1j],
+                           [1j, 0]])
+    
+    norma_estado = vector_mag(estado_phi)
+    print(norma_estado)
+
+    # ================== Q9 ==================
+    dinamica_sistema = np.array([[0,0,0,1,0,0],
+                                 [0,1,0,0,0,0],
+                                 [0,0,0,0,0,1],
+                                 [0,0,0,0,1,0],
+                                 [0,0,1,0,0,0],
+                                 [1,0,0,0,0,0]])
+    
+    est_inicial = np.array([[4],
+                            [1],
+                            [5],
+                            [3],
+                            [10],
+                            [2]])
+    
+    for i in range(4):
+        est_inicial = matriz_mult(dinamica_sistema, est_inicial)
+
+        print(f"{est_inicial} \n")
+
+    # ================== Q12 ==================
+    estado_0 = np.array([[1],
+                         [0]])
+    
+    operador_x = np.array([[0, 1],
+                           [1, 0]])
+    
+    # VECTOR NORMALIZADO
+    norma_estado_0 = vector_mag(estado_0)
+    estado_0 = escalar_x_vector(norma_estado_0, estado_0)
+    print(f"{estado_0} \n")
+
+    # VALOR ESPERADO
+    parte_1 = matriz_mult(operador_x, estado_0)
+    adjunta_estado_0 = vector_adj(estado_0)
+    val_esperado = matriz_mult(adjunta_estado_0, parte_1)
+    print(f"{val_esperado} \n")
+
+    # ============ Q5 ==========
+    M = np.array([[2/15, 7/15, 6/15],
+                  [9/15, 5/15, 1/15],
+                  [4/15, 3/15, 8/15]])
+    
+    estado_t = np.array([[0],
+                         [0],
+                         [1]])
+    
+    cl1 = matriz_mult(M, estado_t)
+    print(f"{cl1} \n")
+    suma = 0
+    p1 = cl1[1][0]
+    p2 = cl1[2][0]
+
+    suma_prob = p1 + p2
+    print(suma_prob)
